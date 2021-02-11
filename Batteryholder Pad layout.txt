@@ -1,0 +1,7 @@
+Batteryholder
+
+Battery-1: Pad 9 = GND
+Battery-1: Pad 7 = +
+
+Battery-2: Pad 6 = GND
+Battery-2: Pad 8 = +
