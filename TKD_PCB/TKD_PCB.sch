@@ -658,9 +658,7 @@ F 3 "" H 5150 4150 50  0001 C CNN
 	1    5150 4150
 	1    0    0    -1  
 $EndComp
-NoConn ~ 6050 1350
 NoConn ~ 6050 1450
-NoConn ~ 6050 1550
 NoConn ~ 6050 1650
 NoConn ~ 6050 1750
 NoConn ~ 6050 1850
@@ -1474,4 +1472,86 @@ Wire Notes Line
 	5600 7800 500  7800
 Text Notes 11500 3900 0    50   ~ 0
 Battery protection circuit
+$Comp
+L Transistor_BJT:S8050 Q?
+U 1 1 60276841
+P 6100 3750
+F 0 "Q?" H 6291 3704 50  0000 L CNN
+F 1 "S8050" H 6291 3795 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6300 3675 50  0001 L CIN
+F 3 "http://www.unisonic.com.tw/datasheet/S8050.pdf" H 6100 3750 50  0001 L CNN
+	1    6100 3750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:S8050 Q?
+U 1 1 602739FF
+P 6100 3200
+F 0 "Q?" H 6291 3246 50  0000 L CNN
+F 1 "S8050" H 6291 3155 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6300 3125 50  0001 L CIN
+F 3 "http://www.unisonic.com.tw/datasheet/S8050.pdf" H 6100 3200 50  0001 L CNN
+	1    6100 3200
+	-1   0    0    -1  
+$EndComp
+Text Label 6000 4100 3    50   ~ 0
+GPIO0
+Wire Wire Line
+	6000 3950 6000 4100
+$Comp
+L Device:R R?
+U 1 1 6029CDCC
+P 6550 3750
+F 0 "R?" V 6343 3750 50  0000 C CNN
+F 1 "12k" V 6434 3750 50  0000 C CNN
+F 2 "" V 6480 3750 50  0001 C CNN
+F 3 "~" H 6550 3750 50  0001 C CNN
+	1    6550 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6029DF5F
+P 6550 3200
+F 0 "R?" V 6343 3200 50  0000 C CNN
+F 1 "12k" V 6434 3200 50  0000 C CNN
+F 2 "" V 6480 3200 50  0001 C CNN
+F 3 "~" H 6550 3200 50  0001 C CNN
+	1    6550 3200
+	0    1    1    0   
+$EndComp
+Text Label 6000 2900 0    50   ~ 0
+EN
+Wire Wire Line
+	6000 3000 6000 2900
+Wire Wire Line
+	6300 3750 6400 3750
+Wire Wire Line
+	6300 3200 6400 3200
+Wire Wire Line
+	6700 3750 7000 3750
+Wire Wire Line
+	7150 3750 7150 1350
+Wire Wire Line
+	7150 1350 6050 1350
+Wire Wire Line
+	6700 3200 6750 3200
+Wire Wire Line
+	6850 3200 6850 1550
+Wire Wire Line
+	6850 1550 6050 1550
+Wire Wire Line
+	6000 3400 7000 3400
+Wire Wire Line
+	7000 3400 7000 3750
+Connection ~ 7000 3750
+Wire Wire Line
+	7000 3750 7150 3750
+Wire Wire Line
+	6000 3550 6750 3550
+Wire Wire Line
+	6750 3550 6750 3200
+Connection ~ 6750 3200
+Wire Wire Line
+	6750 3200 6850 3200
 $EndSCHEMATC
