@@ -806,7 +806,7 @@ U 1 1 5F71F696
 P 4450 5250
 F 0 "J2" H 4530 5242 50  0000 L CNN
 F 1 "Conn_01x06" H 4530 5151 50  0000 L CNN
-F 2 "Connector_JST:JST_PH_S6B-PH-K_1x06_P2.00mm_Horizontal" H 4450 5250 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 4450 5250 50  0001 C CNN
 F 3 "~" H 4450 5250 50  0001 C CNN
 	1    4450 5250
 	1    0    0    -1  
@@ -1011,17 +1011,17 @@ F 4 " 848-R5460N233AFTRFE " H 1350 6800 50  0001 C CNN "Mouser Part Number"
 $EndComp
 Text Label 2400 7050 2    50   ~ 0
 HSPISCLK
-Text Label 2400 7150 2    50   ~ 0
-HSPIMOSI
-Text Label 1000 6700 2    50   ~ 0
-HSPIMISO
-Text Label 1000 6800 2    50   ~ 0
-GPIO4
-Text Label 1000 6900 2    50   ~ 0
-GPIO15
-Text Label 1000 7000 2    50   ~ 0
-GPIO16
 Text Label 1000 7100 2    50   ~ 0
+HSPIMOSI
+Text Label 2400 7150 2    50   ~ 0
+HSPIMISO
+Text Label 1000 6900 2    50   ~ 0
+GPIO4
+Text Label 1000 7000 2    50   ~ 0
+GPIO15
+Text Label 1000 6800 2    50   ~ 0
+GPIO16
+Text Label 1000 6700 2    50   ~ 0
 GPIO17
 $Comp
 L Connector_Generic:Conn_01x08 J5
