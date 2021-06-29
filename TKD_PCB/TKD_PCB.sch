@@ -858,65 +858,18 @@ VSPICS
 Wire Wire Line
 	4250 5450 4000 5450
 $Comp
-L TKD_PCB-rescue:1049-SamacSys_Parts U?
-U 1 1 5F96C19B
-P 8200 4000
-AR Path="/5F7F5441/5F96C19B" Ref="U?"  Part="1" 
-AR Path="/5F96C19B" Ref="U5"  Part="1" 
-F 0 "U5" H 8600 4265 50  0000 C CNN
-F 1 "1049" H 8600 4174 50  0000 C CNN
-F 2 "SamacSys_Parts:1049" H 8850 4100 50  0001 L CNN
-F 3 "http://www.keyelco.com/product.cfm/product_id/921" H 8850 4000 50  0001 L CNN
-F 4 "KEYSTONE - 1049 - BATTERY HOLDER, 18650, THROUGH HOLE" H 8850 3900 50  0001 L CNN "Description"
-F 5 "14" H 8850 3800 50  0001 L CNN "Height"
-F 6 "534-1049" H 8850 3700 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Keystone-Electronics/1049?qs=%2F7TOpeL5Mz78b0pqEFIl5w%3D%3D" H 8850 3600 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Keystone Electronics" H 8850 3500 50  0001 L CNN "Manufacturer_Name"
-F 9 "1049" H 8850 3400 50  0001 L CNN "Manufacturer_Part_Number"
-	1    8200 4000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8950 4200 9000 4200
-Wire Wire Line
-	8950 4300 9000 4300
-NoConn ~ 8150 4000
-NoConn ~ 8150 4100
-NoConn ~ 8150 4200
-NoConn ~ 8150 4300
-NoConn ~ 8150 4400
-$Comp
 L power:+BATT #PWR?
 U 1 1 5F96C1A8
-P 10600 4500
+P 10050 4600
 AR Path="/5F7F5441/5F96C1A8" Ref="#PWR?"  Part="1" 
 AR Path="/5F96C1A8" Ref="#PWR025"  Part="1" 
-F 0 "#PWR025" H 10600 4350 50  0001 C CNN
-F 1 "+BATT" V 10615 4628 50  0000 L CNN
-F 2 "" H 10600 4500 50  0001 C CNN
-F 3 "" H 10600 4500 50  0001 C CNN
-	1    10600 4500
+F 0 "#PWR025" H 10050 4450 50  0001 C CNN
+F 1 "+BATT" V 10065 4728 50  0000 L CNN
+F 2 "" H 10050 4600 50  0001 C CNN
+F 3 "" H 10050 4600 50  0001 C CNN
+	1    10050 4600
 	0    1    1    0   
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5F96C1AE
-P 9950 4000
-AR Path="/5F7F5441/5F96C1AE" Ref="#PWR?"  Part="1" 
-AR Path="/5F96C1AE" Ref="#PWR021"  Part="1" 
-F 0 "#PWR021" H 9950 3750 50  0001 C CNN
-F 1 "GND" H 9955 3827 50  0000 C CNN
-F 2 "" H 9950 4000 50  0001 C CNN
-F 3 "" H 9950 4000 50  0001 C CNN
-	1    9950 4000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8950 4000 9000 4000
-Wire Wire Line
-	8950 4100 9000 4100
-Wire Wire Line
-	9150 4300 9150 4200
 Wire Notes Line
 	5550 7800 5550 5750
 Text Notes 5350 6000 2    118  ~ 0
@@ -1126,91 +1079,42 @@ Connection ~ 4350 6500
 $Comp
 L Switch:SW_SPDT SW3
 U 1 1 5FA5853B
-P 9800 4600
-F 0 "SW3" H 9800 4885 50  0000 C CNN
-F 1 "SW_SPDT" H 9800 4794 50  0000 C CNN
-F 2 "SamacSys_Parts:AYZ0103AGRLC" H 9800 4600 50  0001 C CNN
-F 3 "~" H 9800 4600 50  0001 C CNN
-F 4 " 611-AYZ0103AGRLC " H 9800 4600 50  0001 C CNN "Mouser Part Number"
-	1    9800 4600
+P 9250 4700
+F 0 "SW3" H 9250 4985 50  0000 C CNN
+F 1 "SW_SPDT" H 9250 4894 50  0000 C CNN
+F 2 "SamacSys_Parts:AYZ0103AGRLC" H 9250 4700 50  0001 C CNN
+F 3 "~" H 9250 4700 50  0001 C CNN
+F 4 " 611-AYZ0103AGRLC " H 9250 4700 50  0001 C CNN "Mouser Part Number"
+	1    9250 4700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10000 4500 10150 4500
-Wire Wire Line
-	9450 4100 9450 4600
-Wire Wire Line
 	9450 4600 9600 4600
-NoConn ~ 10000 4700
-Connection ~ 9000 4000
-Wire Wire Line
-	9000 4000 9350 4000
-Connection ~ 9000 4100
-Wire Wire Line
-	9000 4100 9200 4100
-Connection ~ 9000 4200
-Wire Wire Line
-	9000 4200 9100 4200
-Connection ~ 9000 4300
-Wire Wire Line
-	9000 4300 9150 4300
-Text GLabel 8850 4650 3    50   Input ~ 0
+NoConn ~ 9450 4800
+Text GLabel 7900 4100 0    50   Input ~ 0
 Batt_1_GND
-Text GLabel 9000 4650 3    50   Input ~ 0
+Text GLabel 7900 4200 0    50   Input ~ 0
 Batt_1_+
-Text GLabel 9150 4650 3    50   Input ~ 0
+Text GLabel 9000 4100 2    50   Input ~ 0
 Batt_2_GND
-Text GLabel 9300 4650 3    50   Input ~ 0
+Text GLabel 9000 4200 2    50   Input ~ 0
 Batt_2_+
-Wire Wire Line
-	9000 4300 9000 4400
-Wire Wire Line
-	9000 4400 8850 4400
-Wire Wire Line
-	8850 4400 8850 4650
-Wire Wire Line
-	9200 4100 9200 4450
-Wire Wire Line
-	9200 4450 9000 4450
-Wire Wire Line
-	9000 4450 9000 4650
-Connection ~ 9200 4100
-Wire Wire Line
-	9200 4100 9450 4100
-Connection ~ 9350 4000
-Wire Wire Line
-	9350 4000 9950 4000
-Wire Wire Line
-	9350 4000 9350 4500
-Wire Wire Line
-	9350 4500 9150 4500
-Wire Wire Line
-	9150 4500 9150 4650
-Wire Wire Line
-	9400 4200 9400 4550
-Wire Wire Line
-	9400 4550 9300 4550
-Wire Wire Line
-	9300 4550 9300 4650
-Connection ~ 9150 4200
-Wire Wire Line
-	9150 4200 9400 4200
 Connection ~ 9900 2600
 Connection ~ 10250 3150
 $Comp
 L Device:D D6
 U 1 1 6028C3AD
-P 10300 4500
-F 0 "D6" V 10254 4580 50  0000 L CNN
-F 1 "D" V 10345 4580 50  0000 L CNN
-F 2 "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10300 4500 50  0001 C CNN
-F 3 "~" H 10300 4500 50  0001 C CNN
-F 4 "C72036" H 10300 4500 50  0001 C CNN "LCSC"
-	1    10300 4500
+P 9750 4600
+F 0 "D6" V 9704 4680 50  0000 L CNN
+F 1 "D" V 9795 4680 50  0000 L CNN
+F 2 "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9750 4600 50  0001 C CNN
+F 3 "~" H 9750 4600 50  0001 C CNN
+F 4 "C72036" H 9750 4600 50  0001 C CNN "LCSC"
+	1    9750 4600
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	10450 4500 10600 4500
+	9900 4600 10050 4600
 $Comp
 L Device:D D4
 U 1 1 60297BA3
@@ -1336,15 +1240,8 @@ Wire Wire Line
 	14750 2200 14750 2400
 Wire Wire Line
 	14750 2400 15000 2400
-Wire Wire Line
-	9100 4200 9100 3650
-Connection ~ 9100 4200
-Wire Wire Line
-	9100 4200 9150 4200
-Text GLabel 9500 3650 2    50   Input ~ 0
+Text GLabel 8900 3750 2    50   Input ~ 0
 Batt_Serie_Connection
-Wire Wire Line
-	9100 3650 9500 3650
 Text GLabel 15850 2400 3    50   Input ~ 0
 Batt_Serie_Connection
 Wire Wire Line
@@ -1403,8 +1300,6 @@ Wire Wire Line
 	12950 2100 13250 2100
 Wire Wire Line
 	13100 2000 13250 2000
-Text GLabel 14400 3100 3    50   Input ~ 0
-Batt_1_GND
 Wire Wire Line
 	14400 2750 14400 3100
 Connection ~ 14400 2750
@@ -1424,8 +1319,6 @@ Wire Notes Line
 	11400 500  11400 5750
 Text Notes 10100 5650 0    50   ~ 0
 Battery Holder for dual 18650
-Text Notes 7350 5700 0    50   ~ 0
-Pad 1 till 6 are screw/attachment pins\nPad 6 = Battery 2 GND\nPad 7 = Battery 1 +\nPad 8 = Battery 2 +\nPad 9 = Battery 1 GND
 Wire Notes Line
 	11400 4000 16100 4000
 Wire Notes Line
@@ -1666,4 +1559,52 @@ Connection ~ 3000 1350
 Wire Wire Line
 	3000 1450 3000 1550
 Connection ~ 3000 1450
+$Comp
+L SamacSys_Parts:1048 U5
+U 1 1 60E08EC3
+P 7950 4100
+F 0 "U5" H 8450 4365 50  0000 C CNN
+F 1 "1048" H 8450 4274 50  0000 C CNN
+F 2 "1048" H 8800 4200 50  0001 L CNN
+F 3 "http://www.keyelco.com/product-pdf.cfm?p=920" H 8800 4100 50  0001 L CNN
+F 4 "KEYSTONE - 1048 - BATTERY HOLDER, 18650 LI-ION, 2CELL, SMD" H 8800 4000 50  0001 L CNN "Description"
+F 5 "" H 8800 3900 50  0001 L CNN "Height"
+F 6 "534-1048" H 8800 3800 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Keystone-Electronics/1048?qs=%2F7TOpeL5Mz5jXkg8vI8Dyw%3D%3D" H 8800 3700 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Keystone Electronics" H 8800 3600 50  0001 L CNN "Manufacturer_Name"
+F 9 "1048" H 8800 3500 50  0001 L CNN "Manufacturer_Part_Number"
+	1    7950 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 3750 8900 3750
+Wire Wire Line
+	7900 4100 7950 4100
+Wire Wire Line
+	7950 4200 7900 4200
+Wire Wire Line
+	7950 4200 7950 4250
+Wire Wire Line
+	7950 4250 8100 4250
+Wire Wire Line
+	8100 4250 8100 3750
+Connection ~ 7950 4200
+Wire Wire Line
+	8950 4100 9000 4100
+Wire Wire Line
+	8950 4200 9000 4200
+Wire Wire Line
+	8950 4200 8950 4700
+Wire Wire Line
+	8950 4700 9050 4700
+Connection ~ 8950 4200
+Wire Wire Line
+	8950 4100 8950 3900
+Wire Wire Line
+	8950 3900 8900 3900
+Connection ~ 8950 4100
+Wire Wire Line
+	8900 3750 8900 3900
+Text GLabel 14400 3100 0    50   Input ~ 0
+Batt_1_GND
 $EndSCHEMATC
