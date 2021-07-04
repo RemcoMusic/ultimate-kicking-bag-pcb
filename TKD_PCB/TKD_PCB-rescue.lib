@@ -28,6 +28,30 @@ X 9 9 800 -300 200 L 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #
+# R5460N233AF-TR-FE-SamacSys_Parts
+#
+DEF R5460N233AF-TR-FE-SamacSys_Parts IC 0 30 Y Y 1 F N
+F0 "IC" 950 300 50 H V L CNN
+F1 "R5460N233AF-TR-FE-SamacSys_Parts" 950 200 50 H V L CNN
+F2 "SOT95P280X140-6N" 950 100 50 H I L CNN
+F3 "" 950 0 50 H I L CNN
+F4 "Battery Management 2-Cell Li-ion Protection IC" 950 -100 50 H I L CNN "Description"
+F5 "1.4" 950 -200 50 H I L CNN "Height"
+F6 "848-R5460N233AFTRFE" 950 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Ricoh-Electronic-Devices-Company/R5460N233AF-TR-FE?qs=0lQeLiL1qyZJIzN8jBJcMQ%3D%3D" 950 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Ricoh" 950 -500 50 H I L CNN "Manufacturer_Name"
+F9 "R5460N233AF-TR-FE" 950 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 5 0 1 6 200 100 900 100 900 -300 200 -300 200 100 N
+X DOUT 1 0 0 200 R 50 50 0 0 P
+X COUT 2 0 -100 200 R 50 50 0 0 P
+X V- 3 0 -200 200 R 50 50 0 0 P
+X VC 4 1100 -200 200 L 50 50 0 0 P
+X VDD 5 1100 -100 200 L 50 50 0 0 P
+X VSS 6 1100 0 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
 # S-8211DAR-M5T1G-SamacSys_Parts
 #
 DEF S-8211DAR-M5T1G-SamacSys_Parts IC 0 30 Y Y 1 F N
@@ -83,6 +107,28 @@ X D+ 3 300 0 100 L 50 50 1 1 P
 X ID 4 300 -200 100 L 50 50 1 1 P
 X GND 5 0 -400 100 U 50 50 1 1 w
 X Shield 6 -100 -400 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# ZXMN6A09GQTA-SamacSys_Parts
+#
+DEF ZXMN6A09GQTA-SamacSys_Parts Q 0 30 Y Y 1 F N
+F0 "Q" 850 300 50 H V L CNN
+F1 "ZXMN6A09GQTA-SamacSys_Parts" 850 200 50 H V L CNN
+F2 "SOT230P700X165-4N" 850 100 50 H I L CNN
+F3 "https://www.diodes.com/assets/Datasheets/DMN6069SE.pdf" 850 0 50 H I L CNN
+F4 "MOSFET MOSFET BVDSS: 41V~60V SOT223 T&R 1K" 850 -100 50 H I L CNN "Description"
+F5 "1.65" 850 -200 50 H I L CNN "Height"
+F6 "621-ZXMN6A09GQTA" 850 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/ZXMN6A09GQTA/?qs=bZr6mbWTK5nD2NoxkSbenA%3D%3D" 850 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Diodes Inc." 850 -500 50 H I L CNN "Manufacturer_Name"
+F9 "ZXMN6A09GQTA" 850 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 5 0 1 6 200 100 800 100 800 -300 200 -300 200 100 N
+X G 1 0 0 200 R 50 50 0 0 P
+X D_1 2 0 -100 200 R 50 50 0 0 P
+X S 3 0 -200 200 R 50 50 0 0 P
+X D_2 4 1000 0 200 L 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #
