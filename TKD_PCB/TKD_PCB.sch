@@ -840,13 +840,13 @@ Wire Wire Line
 Wire Wire Line
 	4000 5250 4250 5250
 Text Label 4000 5250 2    50   ~ 0
-VSPIMOSI
+VSPI_SDO
 Text Label 2650 2850 0    50   ~ 0
 VSPIMISO
 Wire Wire Line
 	2500 2850 2650 2850
 Text Label 4000 5350 2    50   ~ 0
-VSPIMISO
+VSPI_SDI
 Wire Wire Line
 	4250 5350 4000 5350
 Text Label 2650 2050 0    50   ~ 0
@@ -1507,7 +1507,7 @@ Wire Wire Line
 Wire Notes Line
 	7250 3400 11400 3400
 $Comp
-L SamacSys_Parts:USB2066-05-RBHM-15-STB-00-00-A J1
+L TKD_PCB-rescue:USB2066-05-RBHM-15-STB-00-00-A-SamacSys_Parts J1
 U 1 1 60DB3BDD
 P 3900 1550
 F 0 "J1" H 4350 1815 50  0000 C CNN
@@ -1560,7 +1560,7 @@ Wire Wire Line
 	3000 1450 3000 1550
 Connection ~ 3000 1450
 $Comp
-L SamacSys_Parts:1048 U5
+L TKD_PCB-rescue:1048-SamacSys_Parts U5
 U 1 1 60E08EC3
 P 7950 4100
 F 0 "U5" H 8450 4365 50  0000 C CNN
